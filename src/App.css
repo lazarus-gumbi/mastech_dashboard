@@ -1,38 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 .App {
-  text-align: center;
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main{
+  height: 100%;
+  display: flex;
+  width: 100%;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.top_bar{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.top_bar h3{
+  font-weight: 700;
+}
+
+.right{
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.right-top{
+  height: auto;
+  padding: 0rem 1rem;
+  
+  color: #06266b ;
+  
+}
+.right-bottom{
+  height: 100vh;
+  padding: 1rem;
+  
+}
+
+a{
+  text-decoration: none;
+}
+
+.btn{
+  font-size: 1rem;
+  display: flex;
+  text-decoration: none;
+  gap: .5rem;
+  color: #657e98;
+  background-color: #EBF4FF;
+  font-weight: 700;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.btn:hover{
+  color: #06266b ;
+  background-color: #EBF4FF;
+  
+}
+
+.sidebar{
+  width: 250px;
+  height: 100%;
+  background-color: #91a9dea8;
+  margin: 0;
+  padding: 0;
+  color: #06266b ;
+  padding-top: 10px;
+}
+
+.profile{
+  padding: 10px;
+  margin: 10px 25px 20px 25px;
+  border-radius: 20px;
+  background-color: #ebf4ffd2;
+  color: #06266b ;
+  font-weight: 700;
+}
+
+.account_icon{
+  display: flex;
+  padding: 2rem 1rem;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.accountIcon{
+  transform: scale(2.5);
+  color: #06266b  ;
+}
+.welcome{
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #06266b  ;
+}
+.account_type{
+  font-size: .8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #06266b  ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navigation{
+  background-color: #048cfc;
+  display: flex;
+  padding: 1rem;
+  color: whitesmoke;
+  align-items: center;
+}
+
+.navigation h4{
+  font-weight: 700;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+}
+
+li{
+  list-style: none;
+}
+
+.side_nav{
+  list-style: none;
+  padding: 15px;
+  
+  display: flex;
+  gap:2rem;
+  color: inherit;
+  align-items: center;
+  
+  
+}
+
+.side_nav:nth-child(4){
+  color: rgb(212, 5, 5) !important;
+}
+
+.sidebar .active{
+  background-color: white;
+  color: #160c38 ;
+  font-weight: 700;
+  border-left: 4px solid #160c38;
+  
+}
+
+.side_nav:hover{
+  cursor: pointer;
+  background-color: #657e98 ;
+}
+
+.subscription_plan{
+  background-color: #06266b;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 1rem;
+  width: 15rem;
+  border-radius: 15px;
+  color: #EBF4FF;
+  
+}
+
+.successful_smss{
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 1rem;
+  width: 15rem;
+  border-radius: 15px;
+  color: #EBF4FF;
+}
+
+.success{
+  background-color: #67ea1b4f;
+  color: #67ea1b;
+  
+}
+
+.pending{
+  background-color: #eaba1b56;
+  color: #eabb1b;
+}
+
+.error{
+  background-color: #ff20025e;
+  color: #ff2002;
+}
+
+.successful_smss h6{
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.successful_smss h4{
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.subscription_plan h6{
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.subscription_plan h4{
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.billing_details{
+  padding-top: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+
+
+
+.sms_cards{
+  padding-top: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.change_plan{
+  background-color: #EBF4FF;
+  width: 6rem;
+  color: #160c38;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.change_plan:hover{
+  cursor: pointer;
+  color: #048cfc;
+}
+
+.next_payment{
+  background-color: #EBF4FF;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 1rem;
+  width: 15rem;
+  border-radius: 15px;
+  color: #06266b;
+  border: 1px solid #160c38;
+}
+
+.next_payment h6{
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.next_payment h4{
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.next_payment_top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.sms_card{
+  display: flex;
+  justify-content: space-between;
+}
+
+.successful_smss h4{
+  font-size: 2rem;
+}
+
+.credit_card{
+  background-color: #f2d569  ;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  padding: 5px;
+  border-radius: 50%;
+  color: #eabb1b;
+}
+
+.sms_history{
+  padding: 1rem 0rem;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+td:first-child,
+th:first-child {
+  border-radius: 10px 0 0 10px;
+}
+
+td:last-child,
+th:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+.heading_of_table th {
+  padding: 12px 1.5rem;
+  text-align: left;
+  background-color: #ebf4ffd2;
+  color: #160c38;
+  margin-bottom: 1rem;
+}
+
+td {
+  padding: 12px 1.5rem;
+  text-align: left;
+  color: #160c38;
+  margin-bottom: 1rem;
+}
+
+
+
+.Pending{
+  background-color: #eaba1b56;
+  padding: 5px;
+  width: fit-content;
+  border-radius: 5px;
+  color: #eabb1b;
+  font-weight: 700;
+}
+
+.Error{
+  background-color: #ff20025e;
+  padding: 5px;
+  width: fit-content;
+  border-radius: 5px;
+  color: #ff2002;
+  font-weight: 700;
+}
+.Successful{
+  background-color: #67ea1b4f;
+  padding: 5px;
+  width: fit-content;
+  border-radius: 5px;
+  color: #67ea1b;
+  font-weight: 700;
+}
+
+.graphs{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  
+}
+
+.monthly{
+  flex: 1;
+}
+
+.daily{
+ flex: 1;
 }

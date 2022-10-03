@@ -8,7 +8,6 @@ import Analytics from './pages/Analytics'
 import Dashboard from './pages/Dashboard'
 import Report from './pages/Report'
 
-
 function App() {
   return (
     <div className="App">

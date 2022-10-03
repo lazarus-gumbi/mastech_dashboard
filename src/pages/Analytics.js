@@ -1,5 +1,6 @@
 import React from 'react'
 import MonthlyChart from '../components/MonthlyChart'
+import DailyChart from '../components/DailyChart'
 
 function Analytics() {
   return (
@@ -10,7 +11,7 @@ function Analytics() {
           <MonthlyChart/>
         </div>
         <div className="daily">
-        <MonthlyChart/>
+        <DailyChart/>
         </div>
       </div>
     </div>

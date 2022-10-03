@@ -4,6 +4,7 @@ import DataSaverOffIcon from '@mui/icons-material/DataSaverOff';
 import BugReportIcon from '@mui/icons-material/BugReport';
 import InfoIcon from '@mui/icons-material/Info';
 import DashboardIcon from '@mui/icons-material/Dashboard';
+import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 
 export const SidebarData = [
     {
@@ -22,8 +23,8 @@ export const SidebarData = [
         link:'/account_details'
     },
     {
-        icon:<BugReportIcon/>,
-        title:'Report a problem',
+        icon:<SupportAgentIcon/>,
+        title:'Request Support',
         link:'/report'
     },
     {

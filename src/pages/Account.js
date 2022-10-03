@@ -1,5 +1,6 @@
 import React from 'react'
 import CreditCardIcon from '@mui/icons-material/CreditCard';
+import CSV_upload from '../components/CSV_upload';
 
 function Account(props) {
   return (
@@ -17,6 +18,10 @@ function Account(props) {
           <h4>E{props.next_amount}</h4>
           <h6>on {props.next_date}</h6>
         </div>
+      </div>
+      <h3>Upload SMS CSV</h3>
+      <div className="file_upload">
+        <CSV_upload/>
       </div>
     </div>
   )

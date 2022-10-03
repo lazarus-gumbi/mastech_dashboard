@@ -1,10 +1,34 @@
 import React from 'react'
-import { SMS_data } from '../components/SMS_data'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import PendingIcon from '@mui/icons-material/Pending';
 import ErrorIcon from '@mui/icons-material/Error';
+import SMSTable from '../components/SMSTable';
+import { SMS_data } from '../components/SMS_data'
+import { CSVLink } from "react-csv";
 
 function Dashboard(props) {
+
+  const headers = [
+    { label: 'ID', key: 'id' },
+    { label: 'Receiver', key: 'receiver' },
+    { label: 'Status', key: 'status' },
+    { label: 'Reason', key: 'reason' },
+  ]
+
+  const data = SMS_data.map((val, key) => {
+      return { id: val.id, 
+        receiver: val.reciver, 
+        status: val.sms_status, 
+        reason: val.reason }
+    })
+  
+
+  const csvReport = {
+    data: data,
+    headers: headers,
+    filename: 'ERROR_SMS_REPORT.csv'
+  }
+
   return (
     <div className="dashboard">
       <h3>Dashboard</h3>
@@ -26,29 +50,8 @@ function Dashboard(props) {
         </div>
       </div>
       <div className="sms_history">
-        <h3>SMS History</h3>
-        <table>
-          <thead>
-          <tr className="heading_of_table">
-            <th>Reciever</th>
-            <th>Status</th>
-            <th>Content</th>
-          </tr>
-          </thead>
-          <tbody>
-          {SMS_data.map((val, key) => {
-
-            return (
-              <tr key={key}>
-                <td>{val.reciver}</td>
-                <td ><p className={val.sms_status === 'Pending' ? 'Pending' : val.sms_status === 'Error' ? 'Error' : 'Successful'}>{val.sms_status}</p></td>
-                <td>{val.content}</td>
-              </tr>)
-          })
-          }
-          </tbody>
-
-        </table>
+        <div className="error_sms_head"><h3>Error SMSs</h3><CSVLink {...csvReport} className='btn'>Export to CSV</CSVLink></div>
+        <SMSTable className='sms-history-table' />
       </div>
     </div>
 

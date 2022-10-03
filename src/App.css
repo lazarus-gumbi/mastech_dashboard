@@ -7,13 +7,13 @@
 *{
   padding: 0;
   margin: 0;
+  transition: .22s;
 }
 
 .main{
   height: 100%;
   display: flex;
   width: 100%;
-
 }
 
 body{
@@ -84,6 +84,25 @@ a{
   padding: 0;
   color: #06266b ;
   padding-top: 10px;
+}
+
+.sidebar_container{
+  display: flex;
+  flex-direction: column;
+  
+  height: 95%;
+  justify-content: space-between;
+}
+
+.sidebar_bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.sidebar_bottom img{
+  width: 150px;
 }
 
 .profile{
@@ -187,7 +206,7 @@ li{
   display: flex;
   flex-direction: column;
   padding: 15px;
-  gap: 1rem;
+  gap: .3rem;
   width: 15rem;
   border-radius: 15px;
   color: #EBF4FF;
@@ -196,17 +215,20 @@ li{
 .success{
   background-color: #67ea1b4f;
   color: #67ea1b;
+  border: 1px solid #67ea1b;
   
 }
 
 .pending{
   background-color: #eaba1b56;
   color: #eabb1b;
+  border: 1px solid #eabb1b;
 }
 
 .error{
   background-color: #ff20025e;
   color: #ff2002;
+  border: 1px solid #ff2002;
 }
 
 .successful_smss h6{
@@ -231,11 +253,10 @@ li{
 
 .billing_details{
   padding-top: 1rem;
+  padding-bottom: 1rem;
   display: flex;
   gap: 2rem;
 }
-
-
 
 .sms_cards{
   padding-top: 1rem;
@@ -286,10 +307,11 @@ li{
 .sms_card{
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .successful_smss h4{
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .credit_card{
@@ -302,13 +324,15 @@ li{
 }
 
 .sms_history{
-  padding: 1rem 0rem;
+  padding: 1rem 0rem 0rem 0rem;
 }
 
 table{
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
+  padding: 0;
+  margin: 0;
 }
 
 td:first-child,
@@ -322,7 +346,7 @@ th:last-child {
 }
 
 .heading_of_table th {
-  padding: 12px 1.5rem;
+  
   text-align: left;
   background-color: #ebf4ffd2;
   color: #160c38;
@@ -330,13 +354,26 @@ th:last-child {
 }
 
 td {
-  padding: 12px 1.5rem;
+  
   text-align: left;
   color: #160c38;
   margin-bottom: 1rem;
 }
 
+.tr{
+  height: 5px !important;
+  padding: 0;
+  margin: 0;
+  
+}
 
+tr {
+  height: 10px;
+}
+
+tr td {
+   height: auto !important;
+}
 
 .Pending{
   background-color: #eaba1b56;
@@ -377,4 +414,58 @@ td {
 
 .daily{
  flex: 1;
+}
+
+.t-cell{
+  width: 10px;
+}
+
+.sms-history-table{
+  margin-top: 1rem;
+}
+
+.error_sms_head{
+  display: flex;
+  gap: 2rem;
+}
+
+.btn{
+  padding: .2rem;
+  font-weight: 700;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  color: #4bad12 !important;
+  background-color: #67ea1b50;
+  border: 1.5px solid #4bad12;
+}
+
+.btn:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.file_upload{
+  display: flex;
+  width: auto;
+  height:100%;
+  margin-top: 2rem;
+}
+
+.uploaded_files button{
+  padding: 0.4rem;
+  margin-top: .3rem;
+  
+  font-weight: 700;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  color: #160c38!important;
+  background-color: #160c385b;
+  border: 1.5px solid #160c38;
+}
+
+.uploaded_files button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
 }

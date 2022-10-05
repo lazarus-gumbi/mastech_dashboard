@@ -11,7 +11,7 @@ import { SMS_data } from './SMS_data';
 
 export default function BasicTable() {
     const [page, setPage] = React.useState(0);
-    const [rowsPerPage, setRowsPerPage] = React.useState(4);
+    const [rowsPerPage, setRowsPerPage] = React.useState(5);
 
     const handleChangePage = (event, newPage) => {
         setPage(newPage);
@@ -47,7 +47,7 @@ export default function BasicTable() {
                     ))}
                 </TableBody>
                 <TablePagination
-                    rowsPerPageOptions={[4, 8, 12]}
+                    rowsPerPageOptions={[5, 10, 15]}
                     component="div"
                     count={SMS_data.length}
                     rowsPerPage={rowsPerPage}

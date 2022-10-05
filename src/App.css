@@ -4,13 +4,19 @@
   height: 100vh;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 *{
   padding: 0;
   margin: 0;
   transition: .22s;
+  /* border: 1px solid red; */
+
 }
 
-.main{
+.home{
   height: 100%;
   display: flex;
   width: 100%;
@@ -39,6 +45,8 @@ body{
   height: 100%;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 .right-top{
@@ -49,8 +57,10 @@ body{
   
 }
 .right-bottom{
-  height: 100vh;
+  height: fit-content;
   padding: 1rem;
+  overflow: auto;
+
   
 }
 
@@ -445,6 +455,7 @@ tr td {
   transform: scale(1.1);
 }
 
+
 .file_upload{
   display: flex;
   width: auto;
@@ -468,4 +479,142 @@ tr td {
 .uploaded_files button:hover{
   cursor: pointer;
   transform: scale(1.1);
+}
+
+
+.support{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.support-top{
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  width: 540px;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+
+.form-group label{
+  font-weight: 400;
+  padding-left: .2rem;
+  font-size: .8rem;
+}
+
+.form-group .support_input{
+  padding: .7rem;
+  background-color: #dadfe9a8;
+  border-radius: 15px;
+  border: none;
+}
+
+.form-group input:hover{
+  transform: scale(1.1);
+}
+
+textarea{
+  padding: .5rem;
+  background-color: #dadfe9a8;
+  border-radius: 15px;
+  border: none;
+}
+
+textarea:hover{
+  transform: scale(1.1);
+}
+
+form button{
+  margin-top: 1rem;
+  background-color: #91a9de;
+  color: #06266b;
+  padding: .7rem;
+  border: none;
+  border-radius: 15px;
+}
+
+form button:hover{
+  cursor: pointer;
+  /* transform: scale(1.2); */
+}
+
+.about-us{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+
+.about-us p{
+  font-size: 14px;
+}
+
+.about-text{
+  font-size: 14px;
+}
+
+.login-page{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-page img{
+  width: 15rem;
+}
+
+.login-bottom .login-btn{
+  margin-top: .5rem;
+  font-size: 1rem;
+  display: flex;
+  text-decoration: none;
+  gap: .5rem;
+  color: #657e98;
+  background-color: #EBF4FF;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.loginCreds{
+  background-color: #dadfe9a8;
+  border: none;
+  padding-left: .5rem;
+  height: 2.5rem;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.login-form-group{
+  display: flex;
+  background-color: #dadfe9a8;
+  border: none;
+  gap: .5rem;
+  margin-top: .5rem;
+  align-items: center;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form-group label{
+  padding-left: .5rem;
 }

@@ -8,6 +8,9 @@ export default function CSV_upload() {
   const handleChange = (file) => {
     setFile(file);
   };
+  const onTypeError = (err) => {
+      alert(err)
+  }
   return (
     <div className="file_up">
       <FileUploader
@@ -15,6 +18,7 @@ export default function CSV_upload() {
         handleChange={handleChange}
         name="file"
         types={fileTypes}
+          onTyperError={onTypeError}
       />
       <div className="uploaded_files">
       <p>{file ? `File name: ${file[0].name}` : "no files uploaded yet"}</p> <button>Upload</button></div>

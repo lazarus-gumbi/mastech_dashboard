@@ -16,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path='home' element={<Home/>}>
+          <Route path='' element={<Account subscription_cost='350.00' next_amount='50.32' next_date='25 Nov 2022'/>}/>
           <Route path="account_details" element={<Account subscription_cost='350.00' next_amount='50.32' next_date='25 Nov 2022'/>} />
           <Route path="about" element={<About />} />
           <Route path="dashboard" element={<Dashboard successful='1500' pending='15' error='23' />} />

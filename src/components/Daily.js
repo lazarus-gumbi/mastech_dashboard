@@ -424,5 +424,230 @@ export const Daily = [
                 'max': 10000
             })
         },
-    }
+},{
+        date: '05/10/22', sms: {
+            successful: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            }),
+            pending: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            }),
+            error: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            })
+        },
+},{
+        date: '05/10/22', sms: {
+            successful: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            }),
+            pending: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            }),
+            error: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            })
+        },
+},{
+        date: '05/10/22', sms: {
+            successful: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            }),
+            pending: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            }),
+            error: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            })
+        },
+},{
+        date: '05/10/22', sms: {
+            successful: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            }),
+            pending: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            }),
+            error: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            })
+        },
+},{
+        date: '05/10/22', sms: {
+            successful: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            }),
+            pending: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            }),
+            error: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            })
+        },
+},{
+        date: '05/10/22', sms: {
+            successful: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            }),
+            pending: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            }),
+            error: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            })
+        },
+},{
+        date: '05/10/22', sms: {
+            successful: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            }),
+            pending: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            }),
+            error: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            })
+        },
+},{
+        date: '05/10/22', sms: {
+            successful: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            }),
+            pending: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            }),
+            error: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            })
+        },
+},{
+        date: '05/10/22', sms: {
+            successful: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            }),
+            pending: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            }),
+            error: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            })
+        },
+},{
+        date: '05/10/22', sms: {
+            successful: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            }),
+            pending: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            }),
+            error: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            })
+        },
+},{
+        date: '05/10/22', sms: {
+            successful: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            }),
+            pending: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            }),
+            error: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            })
+        },
+},{
+        date: '05/10/22', sms: {
+            successful: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            }),
+            pending: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            }),
+            error: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            })
+        },
+},{
+        date: '05/10/22', sms: {
+            successful: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            }),
+            pending: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            }),
+            error: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            })
+        },
+},{
+        date: '05/10/22', sms: {
+            successful: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            }),
+            pending: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            }),
+            error: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            })
+        },
+},{
+        date: '05/10/22', sms: {
+            successful: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            }),
+            pending: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            }),
+            error: faker.datatype.number({
+                'min': 10,
+                'max': 10000
+            })
+        },
+},
 ]

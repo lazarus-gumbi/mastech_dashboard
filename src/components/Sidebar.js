@@ -10,7 +10,7 @@ export default function Sidebar(props) {
     <div className="sidebar">
       <div className="sidebar_container">
         <div className="sidebar_top">
-          <Profile name='Melusi Gumbi' />
+          <Profile name={props.username} />
           <div className="navigation">
             <h4>{props.product_name}</h4>
           </div>

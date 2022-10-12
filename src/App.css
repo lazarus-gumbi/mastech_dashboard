@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
 .App {
   width: 100vw;
   height: 100vh;
@@ -6,6 +6,8 @@
 
 html{
   scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 *{
@@ -29,11 +31,12 @@ body{
 }
 
 .top_bar{
-  width: 100%;
+  width: 99%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 15px;
+  padding-right: 15px;
 }
 
 .top_bar h3{
@@ -51,7 +54,7 @@ body{
 
 .right-top{
   height: auto;
-  padding: 0rem 1rem;
+  padding: 0 1rem;
   
   color: #06266b ;
   
@@ -91,9 +94,8 @@ a{
   height: 100%;
   background-color: #91a9dea8;
   margin: 0;
-  padding: 0;
-  color: #06266b ;
-  padding-top: 10px;
+    color: #06266b ;
+    padding: 10px 0 0;
 }
 
 .sidebar_container{
@@ -334,13 +336,12 @@ li{
 }
 
 .sms_history{
-  padding: 1rem 0rem 0rem 0rem;
+  padding: 1rem 0 0 0;
 }
 
 table{
   width: 100%;
   border-collapse: collapse;
-  margin-top: 1rem;
   padding: 0;
   margin: 0;
 }
@@ -447,7 +448,7 @@ tr td {
   justify-content: center;
   color: #4bad12 !important;
   background-color: #67ea1b50;
-  border: 1.5px solid #4bad12;
+  border: 2px solid #4bad12;
 }
 
 .btn:hover{
@@ -473,7 +474,7 @@ tr td {
   justify-content: center;
   color: #160c38!important;
   background-color: #160c385b;
-  border: 1.5px solid #160c38;
+  border: 2px solid #160c38;
 }
 
 .uploaded_files button:hover{
@@ -599,7 +600,7 @@ form button:hover{
   border: none;
   padding-left: .5rem;
   height: 2.5rem;
-  border-radius: 0px 5px 5px 0px;
+  border-radius: 0 5px 5px 0;
 }
 
 .login-form-group{
@@ -610,11 +611,21 @@ form button:hover{
   margin-top: .5rem;
   align-items: center;
   border-radius: 5px;
-  display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .login-form-group label{
   padding-left: .5rem;
+}
+
+.rec{
+    width: 80px;
+}
+
+.sta{
+    width: 80px;
+}
+
+.t-head{
+    font-weight: 700;
 }

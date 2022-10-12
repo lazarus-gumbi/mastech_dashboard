@@ -27,9 +27,9 @@ export default function BasicTable() {
             <Table height='150px' aria-label="eror smss">
                 <TableHead >
                     <TableRow  >
-                    <TableCell >Reciver</TableCell>
-                    <TableCell >SMS Status</TableCell>
-                    <TableCell >Reason</TableCell>
+                    <TableCell className='t-head'>Reciver</TableCell>
+                    <TableCell className='t-head'>SMS Status</TableCell>
+                    <TableCell className='t-head'>Reason</TableCell>
 
                     </TableRow>
                 </TableHead>
@@ -39,8 +39,8 @@ export default function BasicTable() {
                             key={key}
                             
                         >
-                            <TableCell >{val.reciver}</TableCell>
-                            <TableCell ><p className={val.sms_status === 'Pending' ? 'Pending' : val.sms_status === 'Error' ? 'Error' : 'Successful'}>{val.sms_status}</p></TableCell>
+                            <TableCell className='rec'>{val.reciver}</TableCell>
+                            <TableCell className='sta'><p className={val.sms_status === 'Pending' ? 'Pending' : val.sms_status === 'Error' ? 'Error' : 'Successful'}>{val.sms_status}</p></TableCell>
                             <TableCell >{val.reason}</TableCell>
 
                         </TableRow>
@@ -48,7 +48,7 @@ export default function BasicTable() {
                 </TableBody>
                 <TablePagination
                     rowsPerPageOptions={[5, 10, 15]}
-                    component="div"
+                    component="tr"
                     count={SMS_data.length}
                     rowsPerPage={rowsPerPage}
                     page={page}

@@ -3,4 +3,4 @@
 
 **Dashboard Screen**
 <hr>
-![dashboard](./dashboard.png)
+![Alternate text](dashboard.png)

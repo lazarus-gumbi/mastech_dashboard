@@ -3,4 +3,4 @@
 
 **Dashboard Screen**
 <hr>
-![Semantic description of image](dashboard.png "Image Title")
+![main](dashboard.png)

@@ -3,4 +3,4 @@
 
 **Dashboard Screen**
 <hr>
-![main](dashboard.png)
+![dashboard.png](https://github.com/lazarus-gumbi/mastech_dashboard/blob/master/dashboard.png)
